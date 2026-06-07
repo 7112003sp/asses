@@ -8,7 +8,7 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-app.use("/api", require("./routes/githubRoutes"));
+app.use("/api", require("./routes/githubroutes"));
 
 app.get("/", (req, res) => {
   res.send("GitHub Analyzer API Running");
